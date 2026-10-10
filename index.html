@@ -2,124 +2,152 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Carlo M. Flores - Resume</title>
-  <link rel="stylesheet" href="style.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#102a43" />
+  <meta name="description" content="Portfolio of Carlo M. Flores, Licensed Civil Engineer specializing in structural engineering, construction documentation, quantity surveying, and QA/QC." />
+  <title>Carlo M. Flores | Civil Engineer & Structural Design</title>
+  <style>
+    :root{--navy:#102a43;--navy2:#183f5b;--teal:#21a6a1;--gold:#e5b567;--ink:#233746;--muted:#627789;--paper:#f4f7fa;--white:#fff;--line:#dce5ec;--shadow:0 14px 36px rgba(16,42,67,.09)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:88px}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--paper);color:var(--ink);line-height:1.65}a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}.topbar{position:sticky;top:0;z-index:10;background:rgba(16,42,67,.96);backdrop-filter:blur(12px);color:#fff;border-bottom:1px solid rgba(255,255,255,.12)}.nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{font-weight:800;letter-spacing:.04em;font-size:1.05rem}.brand span{color:var(--gold)}.navlinks{display:flex;gap:22px;align-items:center;font-size:.9rem;color:#e5edf4}.navlinks a:hover{color:var(--gold)}.menu{display:none;background:transparent;border:1px solid #668096;color:#fff;border-radius:8px;padding:7px 10px;font:inherit}
+    .hero{background:radial-gradient(circle at 82% 18%,rgba(33,166,161,.2),transparent 28%),linear-gradient(130deg,var(--navy),#173e58 75%,#20546a);color:#fff;padding:94px 0 86px;overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.45fr .75fr;gap:55px;align-items:center}.eyebrow{text-transform:uppercase;letter-spacing:.18em;font-size:.76rem;font-weight:800;color:var(--gold)}h1{font-size:clamp(2.6rem,6vw,4.8rem);line-height:1.04;letter-spacing:-.045em;margin:18px 0 20px}.hero h1 span{color:#75d7d0}.hero p{font-size:1.08rem;max-width:690px;color:#dce8f1}.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}.btn{display:inline-flex;justify-content:center;align-items:center;padding:12px 18px;border-radius:9px;font-weight:750;border:1px solid transparent;transition:.2s}.btn-primary{background:var(--teal);color:#062f3c}.btn-primary:hover{transform:translateY(-2px);background:#4bc3bd}.btn-outline{border-color:rgba(255,255,255,.45);color:#fff}.btn-outline:hover{background:rgba(255,255,255,.1)}.hero-card{border:1px solid rgba(255,255,255,.19);background:rgba(255,255,255,.07);border-radius:22px;padding:27px;box-shadow:0 25px 55px rgba(0,0,0,.13)}.monogram{height:90px;width:90px;display:grid;place-items:center;border-radius:22px;background:linear-gradient(145deg,var(--gold),#f4d9a7);color:var(--navy);font-size:2rem;font-weight:900;margin-bottom:20px}.hero-card h2{margin:0 0 5px;font-size:1.25rem}.hero-card .role{color:#b7d4e3;font-size:.93rem}.quickfacts{display:grid;gap:12px;margin-top:22px}.quickfact{display:flex;gap:11px;align-items:flex-start;font-size:.9rem;color:#e0eaf1}.dot{width:8px;height:8px;border-radius:50%;background:var(--teal);margin-top:8px;flex:0 0 auto}
+    section{padding:76px 0}.section-head{max-width:700px;margin-bottom:32px}.kicker{color:#138c8a;text-transform:uppercase;letter-spacing:.16em;font-weight:850;font-size:.74rem}.section-head h2{font-size:clamp(1.8rem,4vw,2.65rem);line-height:1.15;letter-spacing:-.035em;color:var(--navy);margin:9px 0 12px}.section-head p{color:var(--muted);margin:0}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}.panel{background:#fff;border:1px solid var(--line);border-radius:16px;padding:27px;box-shadow:var(--shadow)}.panel h3{margin:0 0 12px;color:var(--navy)}.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:13px;margin-top:20px}.stat{background:#f0f7f8;border-radius:12px;padding:16px}.stat strong{display:block;color:var(--navy);font-size:1.6rem;line-height:1.2}.stat span{font-size:.82rem;color:var(--muted)}.tag-list{display:flex;flex-wrap:wrap;gap:8px;margin-top:17px}.tag{font-size:.82rem;background:#eaf3f6;color:#244e62;border:1px solid #d8e8ed;padding:6px 10px;border-radius:999px}
+    .experience{background:#fff}.timeline{position:relative;display:grid;gap:16px}.job{display:grid;grid-template-columns:165px 1fr;gap:25px;padding:22px 24px;border:1px solid var(--line);border-radius:14px;background:#fff}.job-date{font-size:.84rem;color:#138c8a;font-weight:800}.job h3{margin:0;color:var(--navy);font-size:1.08rem}.job .company{font-weight:700;color:#4c6475;margin-top:3px}.job p{margin:9px 0 0;color:var(--muted);font-size:.94rem}.current{display:inline-block;margin-left:8px;background:#e5f7f4;color:#14766f;font-size:.68rem;text-transform:uppercase;letter-spacing:.06em;padding:3px 7px;border-radius:5px;vertical-align:middle}
+    .skills-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.skill-card{background:#fff;border:1px solid var(--line);border-radius:15px;padding:22px}.skill-icon{width:42px;height:42px;border-radius:12px;background:#e7f5f4;color:#128a86;display:grid;place-items:center;font-size:1.2rem;font-weight:900}.skill-card h3{color:var(--navy);margin:14px 0 7px;font-size:1.02rem}.skill-card p{color:var(--muted);font-size:.9rem;margin:0}.training{background:#edf3f7}.training-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}.training-list{list-style:none;padding:0;margin:0}.training-list li{padding:15px 0;border-bottom:1px solid var(--line)}.training-list li:last-child{border-bottom:0}.training-list strong{display:block;color:var(--navy);font-size:.94rem;line-height:1.45}.training-list span{display:block;color:var(--muted);font-size:.83rem;margin-top:4px}.education-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.edu{padding:23px;border-radius:15px;background:#fff;border:1px solid var(--line)}.edu .year{font-size:.8rem;color:#138c8a;font-weight:800}.edu h3{margin:8px 0 4px;color:var(--navy)}.edu p{margin:0;color:var(--muted);font-size:.92rem}.credentials{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}.credential{padding:13px 16px;border:1px solid var(--line);border-radius:11px;background:#fff;font-size:.9rem}.credential strong{color:var(--navy)}
+    .contact{background:var(--navy);color:#fff}.contact .section-head h2{color:#fff}.contact .section-head p{color:#c6d5df}.contact-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:25px}.contact-card{padding:26px;border:1px solid rgba(255,255,255,.17);border-radius:16px;background:rgba(255,255,255,.06)}.contact-row{padding:12px 0;border-bottom:1px solid rgba(255,255,255,.13)}.contact-row:last-child{border-bottom:0}.contact-row small{display:block;color:#9db8c8;text-transform:uppercase;letter-spacing:.1em;font-size:.7rem;font-weight:800}.contact-row a,.contact-row span{overflow-wrap:anywhere}.contact-note{color:#d0dee7}.footer{padding:22px 0;background:#0b2032;color:#a9bdca;font-size:.83rem}.footer-inner{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.backtop{color:var(--gold)}
+    @media(max-width:800px){.hero-grid,.about-grid,.training-grid,.contact-grid{grid-template-columns:1fr}.hero{padding:70px 0}.hero-card{max-width:520px}.skills-grid{grid-template-columns:repeat(2,1fr)}.navlinks{display:none;position:absolute;top:71px;left:0;right:0;background:var(--navy);padding:18px 22px 22px;flex-direction:column;align-items:flex-start;border-top:1px solid #345166}.navlinks.open{display:flex}.menu{display:block}.job{grid-template-columns:1fr;gap:7px}}
+    @media(max-width:520px){.wrap{width:min(100% - 28px,1120px)}section{padding:58px 0}.skills-grid,.education-grid{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}.panel,.skill-card{padding:20px}.hero-actions .btn{width:100%}.hero-card{padding:22px}}
+    @media print{.topbar,.hero-actions,.backtop,.menu{display:none!important}body{background:#fff;font-size:10pt;color:#111}.hero,.contact,.footer{background:#fff!important;color:#111!important}.hero{padding:25px 0}.hero p,.hero-card .role,.quickfact,.contact .section-head p,.contact-note,.contact-row small,.footer{color:#333!important}.hero h1,.hero-card h2,.section-head h2,.job h3,.skill-card h3,.edu h3{color:#111!important}.hero-grid,.about-grid,.training-grid,.contact-grid{grid-template-columns:1fr 1fr;gap:12px}.hero-card,.panel,.job,.skill-card,.edu,.contact-card{box-shadow:none;break-inside:avoid;border:1px solid #bbb;background:#fff!important;color:#111!important;padding:12px}.hero-card{display:none}section{padding:24px 0}.skills-grid{grid-template-columns:repeat(3,1fr)}.training{background:#fff}.tag{border:1px solid #bbb;background:#fff}.footer{border-top:1px solid #aaa}.wrap{width:100%}a{text-decoration:none}}
+  </style>
 </head>
 <body>
-  <div class="container">
-    <aside class="sidebar">
-      <img src="profile.jpg" alt="Profile Photo" class="profile-pic" />
-      <h1>CARLO M. FLORES</h1>
-      <p class="subtitle">Licensed Civil Engineer | Passionate About Sustainable Design & Infrastructure | Aspiring Material Engineer-1 | Structural Engineer (ETABS, Acecom Gear, Midas) | Safety Officer-2</p>
-      <a href="https://drive.google.com/drive/folders/1HjDWwiTeWwAX5uX-_Ec2-2_03PHcUVHz?usp=sharing" class="portfolio-button" target="_blank">
-  📁 View My Drawing Projects & Services
-</a>
+  <header class="topbar">
+    <div class="wrap nav">
+      <a class="brand" href="#home">CMF<span>.</span> ENGINEERING</a>
+      <button class="menu" id="menuButton" aria-expanded="false" aria-controls="navlinks">Menu ☰</button>
+      <nav class="navlinks" id="navlinks" aria-label="Main navigation">
+        <a href="#about">About</a><a href="#experience">Experience</a><a href="#expertise">Expertise</a><a href="#training">Training</a><a href="#education">Education</a><a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero" id="home">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="eyebrow">Licensed Civil Engineer · Philippines</div>
+          <h1>Carlo M.<br><span>Flores</span></h1>
+          <p>Structural Engineer · Structural CAD Detailer · Quantity Surveyor · QA/QC</p>
+          <p>Engineering experience across structural design and documentation, construction planning, quality assurance and control, site supervision, quantity takeoff, and cost estimating.</p>
+          <div class="hero-actions"><a class="btn btn-primary" href="#contact">Contact Me</a><a class="btn btn-outline" href="#experience">View Experience</a><button class="btn btn-outline" onclick="window.print()" type="button">Print Portfolio / Save PDF</button></div>
+        </div>
+        <aside class="hero-card" aria-label="Professional overview">
+          <div class="monogram">CMF</div>
+          <h2>Engineering with purpose.</h2>
+          <div class="role">Structural · Construction · Quality</div>
+          <div class="quickfacts"><div class="quickfact"><span class="dot"></span><span>10 years of professional experience</span></div><div class="quickfact"><span class="dot"></span><span>Structural analysis, design support, and technical documentation</span></div><div class="quickfact"><span class="dot"></span><span>Construction quality control and project implementation</span></div><div class="quickfact"><span class="dot"></span><span>Based in Cagayan de Oro, Philippines</span></div></div>
+        </aside>
+      </div>
+    </section>
 
-      <section>
-        <h2>Contact</h2>
-        <p><strong>Address:</strong><br/>Block 8 Lot 6, Phase 1, Ecoverde Homes, Indahag, CDO</p>
-        <p><strong>Phone:</strong> 0926-5301-72*</p>
-        <p><strong>Email:</strong> <a href="mailto:f.carlo1818@gmail.com">f.carlo1818@gmail.com</a></p>
-      </section>
+    <section id="about">
+      <div class="wrap">
+        <div class="section-head"><div class="kicker">Professional profile</div><h2>Practical engineering, from analysis to site execution.</h2><p>A licensed Civil Engineer with experience spanning structural engineering, construction, planning, project engineering, quality control and assurance, site supervision, quantity takeoff, cost estimates, building permits, and engineering technical documentation.</p></div>
+        <div class="about-grid">
+          <article class="panel"><h3>What I bring to a project</h3><p>I combine engineering analysis and drawing production with practical construction coordination. My work includes reviewing project requirements, supporting quality compliance, preparing technical documentation, and coordinating implementation with project teams.</p><div class="tag-list"><span class="tag">Structural Design</span><span class="tag">QA/QC</span><span class="tag">Construction</span><span class="tag">Quantity Takeoff</span><span class="tag">Technical Documentation</span></div></article>
+          <article class="panel"><h3>Professional snapshot</h3><div class="stats"><div class="stat"><strong>10 yrs</strong><span>Professional experience</span></div><div class="stat"><strong>2015</strong><span>CE licensure year</span></div><div class="stat"><strong>8</strong><span>Listed professional roles</span></div><div class="stat"><strong>CAD + BIM</strong><span>Drafting and modeling</span></div></div></article>
+        </div>
+      </div>
+    </section>
 
-      <section>
-        <h2>Personal Info</h2>
-        <p><strong>DOB:</strong> Oct 16, 1995</p>
-        <p><strong>Birthplace:</strong> Cagayan de Oro City</p>
-        <p><strong>Age:</strong> 29</p>
-        <p><strong>Nationality:</strong> Filipino</p>
-        <p><strong>Status:</strong> Married</p>
-      </section>
+    <section class="experience" id="experience">
+      <div class="wrap">
+        <div class="section-head"><div class="kicker">Career history</div><h2>Professional experience</h2><p>Selected positions as listed in my current CV.</p></div>
+        <div class="timeline">
+          <article class="job"><div class="job-date">2026 – Present</div><div><h3>Structural Engineer / Consultant <span class="current">Current</span></h3><div class="company">FAJ Construction and Development Corporation</div><p>Structural engineering consultancy and construction-related technical services.</p></div></article>
+          <article class="job"><div class="job-date">2025 – Present</div><div><h3>Structural / Civil Engineer <span class="current">Current</span></h3><div class="company">Rizome Philippines (Bamboo Ecologic Export Philippines)</div><p>Engineering support for bamboo-related construction and project implementation.</p></div></article>
+          <article class="job"><div class="job-date">2022 – 2025</div><div><h3>Engineer II (Contract of Service)</h3><div class="company">Provincial Government of Misamis Oriental</div><p>Engineering work within the provincial government.</p></div></article>
+          <article class="job"><div class="job-date">2021 – 2022</div><div><h3>Planning Engineer</h3><div class="company">Liberty Land Corporation</div></div></article>
+          <article class="job"><div class="job-date">2021 – 2022</div><div><h3>Civil Engineer Instructor II</h3><div class="company">Cagayan de Oro College</div></div></article>
+          <article class="job"><div class="job-date">2020 – 2021</div><div><h3>Project Engineer</h3><div class="company">TGB Construction Services</div></div></article>
+          <article class="job"><div class="job-date">2017 – 2020</div><div><h3>Assistant Instructor III</h3><div class="company">Xavier University – Ateneo de Cagayan</div></div></article>
+          <article class="job"><div class="job-date">2016 – 2017</div><div><h3>Project Engineer</h3><div class="company">HNH Builders and Enterprises</div></div></article>
+        </div>
+      </div>
+    </section>
 
-      <section>
-        <h2>License</h2>
-        <p>Civil Engineers Licensure Exam<br/>Passed – Nov 2015, Cebu City</p>
-      </section>
+    <section id="expertise">
+      <div class="wrap">
+        <div class="section-head"><div class="kicker">Technical capabilities</div><h2>Tools and areas of expertise</h2><p>Software and capabilities identified in my current CV.</p></div>
+        <div class="skills-grid">
+          <article class="skill-card"><div class="skill-icon">▦</div><h3>Structural Analysis & Design</h3><p>ETABS, Geo5, SAP, ASDIP, and IDEA StatiCa.</p></article>
+          <article class="skill-card"><div class="skill-icon">⌘</div><h3>Drafting & Modeling</h3><p>AutoCAD, SketchUp, 2D and 3D drafting, and AI-assisted architectural rendering.</p></article>
+          <article class="skill-card"><div class="skill-icon">▤</div><h3>Quantity Surveying</h3><p>Quantity takeoff and construction cost estimating using Bluebeam and PlanSwift.</p></article>
+          <article class="skill-card"><div class="skill-icon">✓</div><h3>QA/QC</h3><p>Quality control and assurance against project requirements and specifications.</p></article>
+          <article class="skill-card"><div class="skill-icon">⌂</div><h3>Site & Project Delivery</h3><p>Site supervision, construction consultation, and project implementation.</p></article>
+          <article class="skill-card"><div class="skill-icon">✦</div><h3>Technical Documentation</h3><p>3D models, blueprints, construction drawings, engineering documents, and AI-assisted project management.</p></article>
+        </div>
+      </div>
+    </section>
 
-      <section>
-        <h2>Education</h2>
-        <p><strong>Xavier University - Ateneo de Cagayan</strong><br/>B.S. Civil Engineering (2015)</p>
-        <p><strong>Mis. Or. Gen. Comp. HS</strong><br/>High School (2010)</p>
-      </section>
+    <section class="training" id="training">
+      <div class="wrap">
+        <div class="section-head"><div class="kicker">Professional development</div><h2>Selected training & seminars</h2><p>A selection of training credentials from my current CV, listed with their provider and date.</p></div>
+        <div class="training-grid">
+          <article class="panel"><h3>Engineering & design</h3><ul class="training-list">
+            <li><strong>PICE 14th Region X Technical Conference</strong><span>Philippine Institute of Civil Engineers · April 17, 2026</span></li>
+            <li><strong>ETABS Fundamentals: Build, Analyze & Design Real Structures</strong><span>MSTConnect Educational Consultancy · February 27, 2026</span></li>
+            <li><strong>AutoCAD 2026 2D & 3D Introduction</strong><span>MSTConnect Educational Consultancy · April 11, 2026</span></li>
+            <li><strong>Autodesk Revit BIM 2026 Fundamentals</strong><span>MSTConnect Educational Consultancy · March 11, 2026</span></li>
+            <li><strong>Design of Concrete Buildings as per DPWH Standards using STAAD Pro, RCDC, and IDEA StatiCa</strong><span>XStructures Engineering Consultants · February 19, 2025</span></li>
+            <li><strong>Structural Design 101: Detailing of Low–Mid Rise Reinforced Concrete Structures (4 hours)</strong><span>MSTConnect Educational Consultancy · January 3, 2025</span></li>
+            <li><strong>Training in Hydraulic Analysis using Epanet</strong><span>TechMinds by ARM Engineering Design Services · March 30–31, 2024</span></li>
+          </ul></article>
+          <article class="panel"><h3>Construction, safety & technical seminars</h3><ul class="training-list">
+            <li><strong>40-Hour Construction Occupational Safety and Health (COSH) with Training of Trainers</strong><span>J3 Trainers and Consultants Inc. · July 29, 2023</span></li>
+            <li><strong>MIDAS Civil Starter Pack II</strong><span>Midas IT Philippines Corporation · June 10, 17, 24 and July 1, 2022</span></li>
+            <li><strong>Construction Management: Re-Learn the Basics of Project Implementation</strong><span>DYAS Construction and Management Consultants · June 18, 2021</span></li>
+            <li><strong>Local Road Asset Management Training</strong><span>UNDP (ROADs2SDGs) · September 10–13, 2019</span></li>
+            <li><strong>Lecture Series on Geotechnical Engineering</strong><span>Philippine Institute of Civil Engineering – Misamis Oriental Chapter · August 28–29, 2019</span></li>
+            <li><strong>Quantum GIS Training</strong><span>National Economic and Development Authority Region X · November 15–17, 2017</span></li>
+          </ul></article>
+        </div>
+        <div class="panel" style="margin-top:24px"><h3>Training and seminars conducted</h3><ul class="training-list">
+          <li><strong>Localization of SDGs Training Session</strong><span>UNDP · Oroquieta City, October 24–25, 2019; Camiguin, July 22–24, 2019</span></li>
+          <li><strong>Quantum GIS Workshop</strong><span>Xavier University College of Engineering · December 2017</span></li>
+          <li><strong>Orientation of Mindanao G-HUBS QA Engineers</strong><span>UNDP (ROADs2SDGs) · September 3–5, 2018</span></li>
+          <li><strong>Autodesk BIM 100: Digitizing the Built Environment</strong><span>ESCA Knowledge Academy · June 1–2, 2018</span></li>
+          <li><strong>Mindanao Regional Scientific Meeting – Science and Technology-Enhanced Transformation for Sustainability and Resiliency</strong><span>National Academy of Science and Technology & Department of Science and Technology – Mindanao Cluster · March 12–13, 2018</span></li>
+        </ul></div>
+      </div>
+    </section>
 
-      <section>
-        <h2>Recognition</h2>
-        <p>City College Scholar<br/>Xavier University (2010–2015)</p>
-      </section>
+    <section id="education">
+      <div class="wrap">
+        <div class="section-head"><div class="kicker">Education & credentials</div><h2>Academic background and licensure</h2></div>
+        <div class="education-grid">
+          <article class="edu"><div class="year">2026 – Present</div><h3>Master of Science in Construction Management</h3><p>Polytechnic University of the Philippines – Open University System</p></article>
+          <article class="edu"><div class="year">2010 – 2015</div><h3>Bachelor of Science in Civil Engineering</h3><p>Xavier University – Ateneo de Cagayan</p></article>
+        </div>
+        <div class="credentials"><div class="credential"><strong>Professional License</strong><br>Civil Engineers Licensure Examination — Passed, Cebu City, November 2015</div><div class="credential"><strong>Professional Membership</strong><br>SEAD – Visayas Chapter, Associate Member · 2026–Present</div><div class="credential"><strong>Training Certificate</strong><br>Autodesk Training Certificate — AutoCAD and Revit · 2026–2031</div></div>
+      </div>
+    </section>
 
-      <section>
-        <h2>Skills</h2>
-        <ul>
-          <li>QC/QA of Project Specifications</li>
-          <li>AutoCAD, SketchUp, ETABS, SAP, Midas</li>
-          <li>Construction Cost Estimates</li>
-          <li>Project Scheduling & Supervision</li>
-          <li>3D Models & Blueprints</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>Other Skills</h2>
-        <ul>
-          <li>Open-minded leader</li>
-          <li>Strong communication</li>
-          <li>Good problem solving</li>
-          <li>Organizational skills</li>
-        </ul>
-      </section>
-    </aside>
-
-    <main class="content">
-      <section>
-        <h2>Professional Experience</h2>
-        <ul class="timeline">
-          <li><strong>Engineer II (COS)</strong><br/>Provincial Govt of Misamis Oriental<br/><em>Feb 2023 – Jun 2025</em></li>
-          <li><strong>Junior Planning Engineer/ Site Supervisor</strong><br/>Liberty Land Corporation<br/><em>Jul 2022 – Jan 2023</em></li>
-          <li><strong>Civil Engineering Instructor II</strong><br/>PHINMA – Cagayan de Oro College<br/><em>Dec 2021 – Dec 2022</em></li>
-          <li><strong>Structural Engineer Consultant</strong><br/>C-ONE Trading Corp<br/><em>Jan 2022 – Jul 2022</em></li>
-          <li><strong>Freelance CAD Designer / Estimator / Structural Engineer</strong><br/><em>2021 – Present</em></li>
-          <li><strong>Project Engineer</strong><br/>TGB Construction Services<br/><em>Feb 2020 – Mar 2021</em></li>
-          <li><strong>Assistant Instructor III</strong><br/>Xavier University -  Ateneo de Cagayan<br/><em>Jun 2017 – Mar 2020</em></li>
-          <li><strong>Office Engineer (Part-time)</strong><br/>JCA Realty Corp<br/><em>Jun 2017 – Oct 2017</em></li>
-          <li><strong>Field Engineer</strong><br/>HNH Builders & Enterprises<br/><em>Mar 2016 – Jun 2017</em></li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>Trainings & Seminars</h2>
-        <p>A comprehensive list of trainings including:</p>
-        <ul>
-          <li>Design of Concrete Buildings as per DPWH Standards using STAAD Pro, RCDC, and IDEA Statica – XSTRUCTURES ENGINEERING CONSULTANTS (2025)</li>
-           <li>4-Hour Training in Structural Design 101: Structure Detailing of Low-Mid Rise Reinforced Concrete Structures – MSTCONNECT EDUCATIONAL CONSULTANCY (2025)</li>
-          <li>Training On Basic Cost Estimation; Training On 3D Modelling and Rendering; Training on Computer Aided Drafting Using AutoCAD; Training on Structural Analysis Using Staad Pro; Training on Hydraulic Analysis Using Epanet – ARM ENGINEERING DESIGNS (2025)</li>
-          <li>2024 PICE MIDYEAR NATIONAL CONVENTION, INTERNATIONAL, ENGINEERING EXPO & TECHNICAL EXPERIENCE</li>
-          <li>40 hr – Construction Occupational Safety and Health (COSH) with Students Manual – J3 TRAINERS AND CONSULTANTS INC.</li>
-            <li>2023 PICE MIDYEAR NATIONAL CONVENTION AND TECHNICAL CONFERENCE</li>
-          <li>Midas Civil Starter Pack 2 – MIDAS IT PHILIPPINES CORPORATION(2022)</li>
-            <li>2021 PICE MIDYEAR NATIONAL CONVENTION AND TECHNICAL CONFERENCE</li>
-          <li>Construction Management Webinar – DYAS (2021)</li>
-          <li>Local Road Asset Mgmt – UNDP (2019)</li>
-          <li>Geotechnical Engineering Lecture – USTP (2019)</li>
-          <li>Autodesk BIM 100 – ESCA (2018)</li>
-          <li>Mindanao Regional S&T Meeting – DOST (2018)</li>
-          <li>Quantum GIS Training – NEDA X (2017)</li>
-          <li>Project PaTooBig – Xavier University (2015)</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>Seminars Conducted</h2>
-        <ul>
-          <li>Localization of SDGs Training Session (Resource Speaker) – UNDP (Camiguin, Oroquieta)</li>
-          <li>Quantum GIS Workshop (Resource Speaker) – Xavier University College of Engineering, 2017</li>
-        </ul>
-      </section>
-
-      <footer>
-        <p>*References available upon request.</p>
-      </footer>
-    </main>
-  </div>
+    <section class="contact" id="contact">
+      <div class="wrap">
+        <div class="section-head"><div class="kicker">Get in touch</div><h2>Let's discuss your engineering project.</h2><p>For structural engineering, drafting, quantity takeoff, QA/QC, or construction-related coordination, feel free to contact me.</p></div>
+        <div class="contact-grid">
+          <div class="contact-card"><div class="contact-row"><small>Email</small><a href="mailto:f.carlo1818@gmail.com">f.carlo1818@gmail.com</a></div><div class="contact-row"><small>Phone</small><a href="tel:+639265301728">+63 926 530 1728</a></div><div class="contact-row"><small>Location</small><span>Cagayan de Oro City, Philippines</span></div></div>
+          <div class="contact-card"><h3 style="margin-top:0">Professional focus</h3><p class="contact-note">Structural analysis and design support · Construction drawings · Quantity takeoff and cost estimating · Quality assurance and quality control · Site supervision · Engineering documentation</p><a class="btn btn-primary" href="mailto:f.carlo1818@gmail.com?subject=Engineering%20Project%20Inquiry">Email for an Inquiry</a></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer"><div class="wrap footer-inner"><span>© <span id="year"></span> Carlo M. Flores · Civil Engineer</span><a class="backtop" href="#home">Back to top ↑</a></div></footer>
+  <script>
+    const menuButton=document.getElementById('menuButton');
+    const navlinks=document.getElementById('navlinks');
+    menuButton.addEventListener('click',()=>{const open=navlinks.classList.toggle('open');menuButton.setAttribute('aria-expanded',String(open));});
+    navlinks.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{navlinks.classList.remove('open');menuButton.setAttribute('aria-expanded','false');}));
+    document.getElementById('year').textContent=new Date().getFullYear();
+  </script>
 </body>
 </html>
